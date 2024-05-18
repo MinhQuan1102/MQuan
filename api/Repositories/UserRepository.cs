@@ -27,9 +27,9 @@ namespace api.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<User> GetUserByNameAsync(string username)
+        public async Task<User> GetUserByNameAsync(string username)
         {
-            throw new NotImplementedException();
+            return await _context.Users.SingleOrDefaultAsync(x => x.UserName == username);
         }
 
         public void Update(User user)
