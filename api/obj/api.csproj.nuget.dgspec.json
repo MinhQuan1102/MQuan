@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VSCode Project\\MQuan\\api\\api.csproj": {}
+    "Q:\\VSCode Project\\MQuan\\api\\api.csproj": {}
   },
   "projects": {
-    "D:\\VSCode Project\\MQuan\\api\\api.csproj": {
+    "Q:\\VSCode Project\\MQuan\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VSCode Project\\MQuan\\api\\api.csproj",
+        "projectUniqueName": "Q:\\VSCode Project\\MQuan\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "D:\\VSCode Project\\MQuan\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\GG\\.nuget\\packages\\",
-        "outputPath": "D:\\VSCode Project\\MQuan\\api\\obj\\",
+        "projectPath": "Q:\\VSCode Project\\MQuan\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\Minh Quan\\.nuget\\packages\\",
+        "outputPath": "Q:\\VSCode Project\\MQuan\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\GG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Minh Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,9 +45,43 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.26.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.5.2, )"
             }
           },
           "imports": [
@@ -69,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

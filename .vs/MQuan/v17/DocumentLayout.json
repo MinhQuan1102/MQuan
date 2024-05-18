@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Q:\\VSCode Project\\MQuan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\dtomodels\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\dtomodels\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\dtomodels\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\dtomodels\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\helper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\helper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\data\\migrations\\20240515153804_updateuserentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\data\\migrations\\20240515153804_updateuserentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\dtomodels\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\dtomodels\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\UserDTO.cs",
+              "RelativeDocumentMoniker": "api\\DTOModels\\UserDTO.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\UserDTO.cs",
+              "RelativeToolTip": "api\\DTOModels\\UserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T14:55:46.112Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Helper\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "api\\Helper\\AutoMapperProfile.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Helper\\AutoMapperProfile.cs",
+              "RelativeToolTip": "api\\Helper\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T16:08:31.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "api\\appsettings.Development.json",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\appsettings.Development.json",
+              "RelativeToolTip": "api\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-15T15:58:30.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240515153804_updateUserEntity.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Data\\Migrations\\20240515153804_updateUserEntity.cs",
+              "RelativeDocumentMoniker": "api\\Data\\Migrations\\20240515153804_updateUserEntity.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Data\\Migrations\\20240515153804_updateUserEntity.cs",
+              "RelativeToolTip": "api\\Data\\Migrations\\20240515153804_updateUserEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T15:38:06.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "api\\Controllers\\AuthController.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "api\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswCkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T14:47:41.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Program.cs",
+              "RelativeDocumentMoniker": "api\\Program.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Program.cs",
+              "RelativeToolTip": "api\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T16:10:39.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationServiceExtensions.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Extensions\\ApplicationServiceExtensions.cs",
+              "RelativeDocumentMoniker": "api\\Extensions\\ApplicationServiceExtensions.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Extensions\\ApplicationServiceExtensions.cs",
+              "RelativeToolTip": "api\\Extensions\\ApplicationServiceExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T15:10:01.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "api\\Services\\TokenService.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Services\\TokenService.cs",
+              "RelativeToolTip": "api\\Services\\TokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T15:08:38.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "api\\Entities\\User.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Entities\\User.cs",
+              "RelativeToolTip": "api\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T14:52:00.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "api\\DTOModels\\LoginDTO.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\LoginDTO.cs",
+              "RelativeToolTip": "api\\DTOModels\\LoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T14:55:58.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "api\\DTOModels\\RegisterDTO.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\RegisterDTO.cs",
+              "RelativeToolTip": "api\\DTOModels\\RegisterDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T14:45:21.757Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
