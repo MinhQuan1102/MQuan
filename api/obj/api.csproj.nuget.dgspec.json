@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Q:\\VSCode Project\\MQuan\\api\\api.csproj": {}
+    "D:\\VSCode Project\\MQuan\\api\\api.csproj": {}
   },
   "projects": {
-    "Q:\\VSCode Project\\MQuan\\api\\api.csproj": {
+    "D:\\VSCode Project\\MQuan\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Q:\\VSCode Project\\MQuan\\api\\api.csproj",
+        "projectUniqueName": "D:\\VSCode Project\\MQuan\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "Q:\\VSCode Project\\MQuan\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\Minh Quan\\.nuget\\packages\\",
-        "outputPath": "Q:\\VSCode Project\\MQuan\\api\\obj\\",
+        "projectPath": "D:\\VSCode Project\\MQuan\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\GG\\.nuget\\packages\\",
+        "outputPath": "D:\\VSCode Project\\MQuan\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Minh Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
