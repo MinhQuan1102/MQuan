@@ -101,6 +101,150 @@ namespace api.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("api.Entities.Image", b =>
+                {
+                    b.Property<int?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Images");
+                });
+
+            modelBuilder.Entity("api.Entities.MQSocial.Group", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CoverImage")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("GroupType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Group");
+                });
+
+            modelBuilder.Entity("api.Entities.MQSocial.Post", b =>
+                {
+                    b.Property<int?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("GroupId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool?>("IsEdited")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("SharedPostId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("TotalReactions")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Posts");
+                });
+
+            modelBuilder.Entity("api.Entities.MQSocial.PostReaction", b =>
+                {
+                    b.Property<int?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("PostId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Type")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PostId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("PostReactions");
+                });
+
+            modelBuilder.Entity("api.Entities.MQSocial.UserGroup", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("GroupId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool?>("ReceiveNoti")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Role")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserGroup");
+                });
+
             modelBuilder.Entity("api.Entities.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -140,14 +284,23 @@ namespace api.Data.Migrations
                     b.Property<string>("Avatar")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("City")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Country")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateOnly>("DateOfBirth")
+                    b.Property<DateOnly?>("DateOfBirth")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("District")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
@@ -158,18 +311,15 @@ namespace api.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Gender")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("LastActive")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("LockoutEnabled")
@@ -200,6 +350,9 @@ namespace api.Data.Migrations
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
@@ -268,6 +421,63 @@ namespace api.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("api.Entities.Image", b =>
+                {
+                    b.HasOne("api.Entities.User", "User")
+                        .WithMany("Images")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("api.Entities.MQSocial.Post", b =>
+                {
+                    b.HasOne("api.Entities.MQSocial.Group", "Group")
+                        .WithMany()
+                        .HasForeignKey("GroupId");
+
+                    b.HasOne("api.Entities.User", "User")
+                        .WithMany("Posts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Group");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("api.Entities.MQSocial.PostReaction", b =>
+                {
+                    b.HasOne("api.Entities.MQSocial.Post", "Post")
+                        .WithMany("Reactions")
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("api.Entities.User", "User")
+                        .WithMany("PostReactions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Post");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("api.Entities.MQSocial.UserGroup", b =>
+                {
+                    b.HasOne("api.Entities.MQSocial.Group", "Group")
+                        .WithMany("UserGroups")
+                        .HasForeignKey("GroupId");
+
+                    b.HasOne("api.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Group");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("api.Entities.UserRole", b =>
                 {
                     b.HasOne("api.Entities.Role", "Role")
@@ -287,6 +497,16 @@ namespace api.Data.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("api.Entities.MQSocial.Group", b =>
+                {
+                    b.Navigation("UserGroups");
+                });
+
+            modelBuilder.Entity("api.Entities.MQSocial.Post", b =>
+                {
+                    b.Navigation("Reactions");
+                });
+
             modelBuilder.Entity("api.Entities.Role", b =>
                 {
                     b.Navigation("UserRoles");
@@ -294,6 +514,12 @@ namespace api.Data.Migrations
 
             modelBuilder.Entity("api.Entities.User", b =>
                 {
+                    b.Navigation("Images");
+
+                    b.Navigation("PostReactions");
+
+                    b.Navigation("Posts");
+
                     b.Navigation("UserRoles");
                 });
 #pragma warning restore 612, 618

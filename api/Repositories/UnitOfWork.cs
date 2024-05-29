@@ -1,5 +1,7 @@
 ﻿using api.Data;
 using api.Interfaces;
+using api.Interfaces.MQSocial;
+using api.Repositories.MQSocial;
 using AutoMapper;
 
 namespace api.Repositories
@@ -15,6 +17,7 @@ namespace api.Repositories
             _mapper = mapper;
         }
         public IUserRepository UserRepository => new UserRepository(_context, _mapper);
+        public IPostRepository PostRepository => new PostRepository(_context, _mapper);
 
         public async Task<bool> Complete()
         {
