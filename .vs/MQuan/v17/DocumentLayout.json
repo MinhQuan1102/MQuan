@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "Q:\\VSCode Project\\MQuan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\repositories\\mqsocial\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\repositories\\mqsocial\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\helper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\helper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\dtomodels\\mqsocial\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\dtomodels\\mqsocial\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\dtomodels\\mqsocial\\postreactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\dtomodels\\mqsocial\\postreactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\controllers\\mqsocial\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\controllers\\mqsocial\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\interfaces\\mqsocial\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\interfaces\\mqsocial\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\entities\\mqsocial\\postreaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\entities\\mqsocial\\postreaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|q:\\vscode project\\mquan\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38A92F-A0D3-45BD-9B0D-E692BE1533EE}|api\\api.csproj|solutionrelative:api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "api\\Controllers\\AuthController.cs",
-              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "api\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "PostDTO.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\MQSocial\\PostDTO.cs",
+              "RelativeDocumentMoniker": "api\\DTOModels\\MQSocial\\PostDTO.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\MQSocial\\PostDTO.cs",
+              "RelativeToolTip": "api\\DTOModels\\MQSocial\\PostDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T13:42:07.467Z",
+              "WhenOpened": "2024-05-28T16:59:04.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Helper\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "api\\Helper\\AutoMapperProfile.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Helper\\AutoMapperProfile.cs",
+              "RelativeToolTip": "api\\Helper\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:36:31.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "api\\Repositories\\UserRepository.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "api\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:12:48.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "api\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "api\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:12:46.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Repositories\\MQSocial\\PostRepository.cs",
+              "RelativeDocumentMoniker": "api\\Repositories\\MQSocial\\PostRepository.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Repositories\\MQSocial\\PostRepository.cs",
+              "RelativeToolTip": "api\\Repositories\\MQSocial\\PostRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwBYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:11:22.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPostRepository.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Interfaces\\MQSocial\\IPostRepository.cs",
+              "RelativeDocumentMoniker": "api\\Interfaces\\MQSocial\\IPostRepository.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Interfaces\\MQSocial\\IPostRepository.cs",
+              "RelativeToolTip": "api\\Interfaces\\MQSocial\\IPostRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:10:15.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PostsController.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Controllers\\MQSocial\\PostsController.cs",
+              "RelativeDocumentMoniker": "api\\Controllers\\MQSocial\\PostsController.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Controllers\\MQSocial\\PostsController.cs",
+              "RelativeToolTip": "api\\Controllers\\MQSocial\\PostsController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAgwEQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:08:32.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "api\\Controllers\\UsersController.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "api\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAswDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:07:51.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PostReaction.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\Entities\\MQSocial\\PostReaction.cs",
+              "RelativeDocumentMoniker": "api\\Entities\\MQSocial\\PostReaction.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\Entities\\MQSocial\\PostReaction.cs",
+              "RelativeToolTip": "api\\Entities\\MQSocial\\PostReaction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:07:05.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PostReactionDTO.cs",
+              "DocumentMoniker": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\MQSocial\\PostReactionDTO.cs",
+              "RelativeDocumentMoniker": "api\\DTOModels\\MQSocial\\PostReactionDTO.cs",
+              "ToolTip": "Q:\\VSCode Project\\MQuan\\api\\DTOModels\\MQSocial\\PostReactionDTO.cs",
+              "RelativeToolTip": "api\\DTOModels\\MQSocial\\PostReactionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:06:51.397Z",
               "EditorCaption": ""
             }
           ]

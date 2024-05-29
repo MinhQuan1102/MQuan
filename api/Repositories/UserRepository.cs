@@ -1,7 +1,9 @@
 ﻿using api.Data;
+using api.DTOModels;
 using api.Entities;
 using api.Interfaces;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace api.Repositories
@@ -17,24 +19,62 @@ namespace api.Repositories
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<User>> GetAllUsersAsync()
+        public async Task<IEnumerable<UserDTO>> GetAllUsersAsync()
         {
-            return await _context.Users.ToListAsync();
+            return await _context.Users
+                .ProjectTo<UserDTO>(_mapper.ConfigurationProvider)
+                .ToListAsync();
         }
 
-        public Task<User> GetUserByIdAsync(int id)
+        public async Task<User> GetUserByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var user = await _context.Users
+                .Where(x => x.Id == id)
+                .FirstOrDefaultAsync();
+            if (user == null)
+            {
+                return null;
+            }
+            return user;
         }
 
         public async Task<User> GetUserByNameAsync(string username)
         {
-            return await _context.Users.SingleOrDefaultAsync(x => x.UserName == username);
+            var user = await _context.Users
+                .Where(x => x.UserName == username)
+                .FirstOrDefaultAsync();
+            if (user == null)
+            {
+                return null;
+            }
+            return user;
+        }
+
+        public async Task<UserDTO> GetUserDTOByIdAsync(int id)
+        {
+            var user = await _context.Users
+                .Where(x => x.Id == id)
+                .ProjectTo<UserDTO>(_mapper.ConfigurationProvider)
+                .FirstOrDefaultAsync();
+            if (user == null)
+            {
+                return null;
+            }
+            return user;
+        }
+
+        public Task<UserDTO> GetUserDTOByNameAsync(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<bool> SaveAllAsync() { 
+            return await _context.SaveChangesAsync() > 0;
         }
 
         public void Update(User user)
         {
-            throw new NotImplementedException();
+            _context.Entry(user).State = EntityState.Modified;
         }
     }
 }

@@ -22,7 +22,7 @@ namespace api.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult<UserDTO>> Register([FromBody] RegisterDTO registerDTO)
+        public async Task<ActionResult<AuthDTO>> Register([FromBody] RegisterDTO registerDTO)
         {
             if (await UserExists(registerDTO.Username)) return BadRequest("Username has been taken!");
             var user = _mapper.Map<User>(registerDTO);
@@ -30,17 +30,15 @@ namespace api.Controllers
 
             if (!result.Succeeded) return BadRequest(result.Errors);
 
-            return new UserDTO
+            return new AuthDTO
             {
                 Username = user.UserName,
                 Token = await _tokenService.CreateToken(user),
-                Gender = user.Gender,
-                DateOfBirth = user.DateOfBirth,
             };
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<UserDTO>> Login([FromBody] LoginDTO loginDTO)
+        public async Task<ActionResult<AuthDTO>> Login([FromBody] LoginDTO loginDTO)
         {
             var user = await _userManager.Users.SingleOrDefaultAsync(x => x.UserName == loginDTO.Username);
             if (user == null) return Unauthorized("Invalid username or password");
@@ -48,7 +46,7 @@ namespace api.Controllers
             var result = await _userManager.CheckPasswordAsync(user, loginDTO.Password);
             if (!result) return Unauthorized("Invalid username of password");
 
-            return new UserDTO
+            return new AuthDTO
             {
                 Username = user.UserName,
                 Token = await _tokenService.CreateToken(user)
