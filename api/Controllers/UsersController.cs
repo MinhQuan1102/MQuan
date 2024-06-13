@@ -52,7 +52,25 @@ namespace api.Controllers
                 return BadRequest("Failed to update user");   
             }
             return Ok(user);
-        }   
+        }
+
+        [HttpPost("send-friend-request/{userToAddId}")]
+        public async Task<ActionResult> SendFriendRequest(int userToAddId)
+        {
+            var userId = User.GetUserId();
+
+            if (userToAddId == userId) return BadRequest("You cannot send friend request to yourself");
+            var user = await _unitOfWork.UserRepository.GetUserByIdAsync(userId);
+            var userToAdd = await _unitOfWork.UserRepository.GetUserByIdAsync(userToAddId);
+
+            if (userToAdd == null) return NotFound();
+
+            if (!user.Friendship1.Any(f => f.User1Id == userToAddId || f.User2Id == userToAddId)) {
+                return Ok();
+            }
+
+            return BadRequest();
+        }
 
     }
 }
