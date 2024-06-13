@@ -10,7 +10,7 @@ namespace api.DTOModels.MQSocial
         public int? GroupId { get; set; }
         public int? SharedPostId { get; set; }
         public int? TotalReactions { get; set; }
-        public List<PostReaction> Reactions { get; set; } = new();
+        public List<PostReactionDTO> Reactions { get; set; } = new();
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     }

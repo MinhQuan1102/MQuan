@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Data;
 
@@ -10,9 +11,11 @@ using api.Data;
 namespace api.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20240610151532_add-group")]
+    partial class addgroup
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.4");
@@ -120,30 +123,6 @@ namespace api.Data.Migrations
                     b.ToTable("Images");
                 });
 
-            modelBuilder.Entity("api.Entities.MQSocial.Friendship", b =>
-                {
-                    b.Property<int>("User1Id")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("User2Id")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Id")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("User1Id", "User2Id");
-
-                    b.HasIndex("User2Id");
-
-                    b.ToTable("Friendship");
-                });
-
             modelBuilder.Entity("api.Entities.MQSocial.Group", b =>
                 {
                     b.Property<int>("Id")
@@ -168,12 +147,7 @@ namespace api.Data.Migrations
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("UserId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Group");
                 });
@@ -459,32 +433,6 @@ namespace api.Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("api.Entities.MQSocial.Friendship", b =>
-                {
-                    b.HasOne("api.Entities.User", "User1")
-                        .WithMany("Friendship1")
-                        .HasForeignKey("User1Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("api.Entities.User", "User2")
-                        .WithMany("Friendship2")
-                        .HasForeignKey("User2Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User1");
-
-                    b.Navigation("User2");
-                });
-
-            modelBuilder.Entity("api.Entities.MQSocial.Group", b =>
-                {
-                    b.HasOne("api.Entities.User", null)
-                        .WithMany("Groups")
-                        .HasForeignKey("UserId");
-                });
-
             modelBuilder.Entity("api.Entities.MQSocial.Post", b =>
                 {
                     b.HasOne("api.Entities.MQSocial.Group", "Group")
@@ -573,12 +521,6 @@ namespace api.Data.Migrations
 
             modelBuilder.Entity("api.Entities.User", b =>
                 {
-                    b.Navigation("Friendship1");
-
-                    b.Navigation("Friendship2");
-
-                    b.Navigation("Groups");
-
                     b.Navigation("Images");
 
                     b.Navigation("PostReactions");

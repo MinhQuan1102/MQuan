@@ -54,16 +54,29 @@ namespace api.Repositories.MQSocial
             return post;
         }
 
-        public async Task<IEnumerable<PostDTO>> GetPostsOfUser(int id)
+        public IEnumerable<PostDTO> GetPostsOfUser(int id)
         {
-            var query = _context.Posts
+            return _context.Posts
                 .Where(
                     p => p.UserId == id
                 )
-                .OrderBy( p => p.CreatedAt )
-                .AsQueryable();
-
-            return await query.ProjectTo<PostDTO>(_mapper.ConfigurationProvider).ToListAsync();
+                .OrderBy(p => p.CreatedAt)
+                .Select(p => new PostDTO
+                {
+                    Id = p.Id,
+                    Content = p.Content,
+                    UserId = p.UserId,
+                    GroupId = p.GroupId,
+                    SharedPostId = p.SharedPostId,
+                    TotalReactions = p.TotalReactions,
+                    Reactions = p.Reactions.Select(r => new PostReactionDTO
+                    {
+                        UserId = r.UserId,
+                        Type = r.Type,
+                    }).ToList(),
+                    CreatedAt = p.CreatedAt,
+                    UpdatedAt = p.UpdatedAt
+                });
         }
     }
 }

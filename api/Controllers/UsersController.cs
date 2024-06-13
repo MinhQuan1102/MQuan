@@ -46,13 +46,13 @@ namespace api.Controllers
             var user = await _unitOfWork.UserRepository.GetUserByIdAsync(id);
             if (user == null) return NotFound();
             _mapper.Map(userDTO, user);
-
-            if (!(await _unitOfWork.UserRepository.SaveAllAsync())) 
+            _unitOfWork.UserRepository.Update(user);
+            if (!await _unitOfWork.UserRepository.SaveAllAsync()) 
             {
                 return BadRequest("Failed to update user");   
             }
             return Ok(user);
-        }
+        }   
 
     }
 }

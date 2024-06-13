@@ -9,7 +9,7 @@
         public string? CoverImage { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
-        public ICollection<UserGroup>? UserGroups { get; set; }
+        public List<UserGroup>? UserGroups { get; set; }
 
     }
 }

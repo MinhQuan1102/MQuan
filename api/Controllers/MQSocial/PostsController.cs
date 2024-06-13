@@ -44,9 +44,9 @@ namespace api.Controllers.MQSocial
         }
 
         [HttpGet("{userId}")]
-        public async Task<ActionResult<PostDTO>> GetPostsOfUser(int userId)
+        public ActionResult<PostDTO> GetPostsOfUser(int userId)
         {
-            var posts = await _unitOfWork.PostRepository.GetPostsOfUser(userId);
+            var posts = _unitOfWork.PostRepository.GetPostsOfUser(userId);
 
             return Ok(posts);
         }

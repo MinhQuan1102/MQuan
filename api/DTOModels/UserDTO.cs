@@ -15,6 +15,7 @@ namespace api.DTOModels
         public string? City { get; set; }
         public string? District { get; set; }
         public List<ImageDTO>? Images { get; set; }
+        public List<FriendDTO>? Friends { get; set; }
         public List<PostDTO>? Posts { get; set; }
     }
 }

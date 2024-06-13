@@ -6,6 +6,5 @@ namespace api.DTOModels.MQSocial
     {
         public int? Type { get; set; }
         public int? UserId { get; set; }
-        public int? PostId { get; set; }
     }
 }

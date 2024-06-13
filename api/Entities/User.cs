@@ -17,13 +17,14 @@ namespace api.Entities
         public string? Country { get; set; }
         public string? City { get; set; }
         public string? District { get; set; }
-        public List<Image> Images { get; set; } = new();
-        public List<Post> Posts { get; set; } = new();
-        public List<PostReaction> PostReactions { get; set; } = new();
+        public ICollection<Image> Images { get; set; } 
+        public ICollection<Friendship> Friendship1 { get; set; } 
+        public ICollection<Friendship> Friendship2 { get; set; } 
+
+        public ICollection<Post> Posts { get; set; } 
+        public ICollection<PostReaction>? PostReactions { get; set; }
+        public ICollection<Group> Groups { get; set; }
+        public ICollection<UserGroup>? UserGroups { get; set; }
         public ICollection<UserRole> UserRoles { get; set; }
-
-   
-        //public ICollection<UserGroup> UserGroups { get; set; }
-
     }
 }
